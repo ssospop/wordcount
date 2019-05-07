@@ -1,0 +1,96 @@
+<head>
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+    <style>
+    
+    body{
+        font-family: "Nanum Gothic", sans-serif;
+    }
+    .navbar {
+    margin-bottom: 0;
+    background-color: #fad6ae;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+    color: #df7599 !important;
+    }
+
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #df7599 !important;
+    background-color: #fff !important;
+    }
+
+    .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+    }
+    .jumbotron { 
+    background-color: #fad6ae; /* Orange */
+    color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand">멋사</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="{%url 'home' %}">HOME</a></li>
+                      <li><a href="{%url 'about' %}">ABOUT</a></li>
+                      <li><a href="{%url 'contact' %}">CONTACT</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+        <div class="jumbotron text-center">
+                <div class="container-fluid">
+                <h2 class="text-center">CONTACT</h2>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <p>Contact us and we'll get back to you within 24 hours.</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Seoul, South Korea</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> +82 0000 0000</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> zlzlzl232@gmail.com</p> 
+                  </div>
+                  <div class="col-sm-7">
+                    <div class="row">
+                      <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                      </div>
+                      <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                      </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                    <div class="row">
+                      <div class="col-sm-12 form-group">
+                        <button class="btn btn-info pull-right" type="submit">Send</button>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+            </div>
+              </div>
+</body>
